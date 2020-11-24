@@ -1,0 +1,56 @@
+* {
+	text-decoration: none;
+	color: black;
+}
+
+body {
+	display: grid;
+	margin: 0;
+}
+
+section {
+	border: 1px solid black;
+	height: 800px;
+	display: grid;
+}
+
+header {
+	height: 80px;
+	display: grid;
+	grid-template-columns: 275px auto;
+}
+
+nav {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+}
+
+div.nm {
+	padding: 30px;
+	text-align: center;
+	border: 1px solid black;
+}
+
+#signup {
+	border: 1px solid black;
+	padding:10px 25px;
+	border-radius: 10px;
+}
+
+section#main {
+	height: 720px;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+div.text {
+	margin-left: 100px;
+	grid-template-rows: repeat(3, 1fr);
+	align-self: center;
+}
+
+div.text>a {
+	background-color: orange;
+	border: 1px solid orange;
+	border-radius: 2px;
+	padding: 10px;
+}
