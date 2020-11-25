@@ -1,6 +1,7 @@
 * {
 	text-decoration: none;
 	color: black;
+	font-family: Nunito;
 }
 
 body {
@@ -15,25 +16,48 @@ section {
 }
 
 header {
-	height: 80px;
+	height: 1fr;
 	display: grid;
-	grid-template-columns: 275px auto;
+	grid-template-columns: 2fr 5fr;
 }
 
 nav {
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
+	grid-template-columns: 1fr 1fr 1.3fr 1fr 1fr 1.5fr;
 }
 
 div.nm {
 	padding: 30px;
 	text-align: center;
-	border: 1px solid black;
+}
+
+.active {
+	color: #DAA520;
+}
+
+.logo>a {
+	display: grid;
+	grid-template-columns: 30px 154px;
+	margin: 24px 0 0 80px;
+	grid-column-gap: 8px;
+}
+
+.logo>a>img {
+	width: 30px;
+}
+
+.logo>a>h1 {
+	letter-spacing: 0.25em;
+	align-self: center;
+	margin: 0;
+	font-size: 24px;
+	font-weight: 700;
+	width: 154px;
 }
 
 #signup {
 	border: 1px solid black;
-	padding:10px 25px;
+	padding: 10px 35px;
 	border-radius: 10px;
 }
 
