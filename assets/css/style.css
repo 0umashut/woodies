@@ -279,3 +279,62 @@ a#bt {
 	font-size: 24px;
 	text-align: center;
 }
+
+/*  ----cats----  */
+
+#categories {
+	height: 978px;
+	grid-template-rows: 80px auto;
+}
+
+#categories .minih {
+	width: 242px;
+}
+
+#categories .logo {
+	grid-template-columns: 30px 242px auto;
+}
+
+.selection {
+	margin: 80px 80px 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 60px;
+	grid-row-gap: 40px;
+}
+
+.selection>div {
+	border-radius: 0 40%;
+	display: grid;
+}
+
+.desk, .bkshlf {
+	background-color: #F9BDBD;
+}
+.chair, .elect {
+	background-color: #F7DEA6;
+}
+
+.kitch {
+	background-color: #A8DCEC;
+}
+
+.shpnw {
+	border: 1px solid black;
+	border-radius: 3px;
+	padding: 10px 30px;
+	align-self: end;
+	justify-self: end;
+	margin: 20px;
+}
+
+.selection p {
+	margin: 20px;
+	font-size: 24px;
+	font-weight: 800;
+}
+
+.chair>img, .kitch>img, .bkshlf>img, .elect>img {
+	align-self: center;
+	justify-self: center;
+}
