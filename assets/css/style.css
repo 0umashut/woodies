@@ -112,6 +112,9 @@ div.text>a {
 #about {
 	height: 950px;
 	grid-template-rows: 80px auto;
+	background-image: url(../images/backlogo.png);
+	background-repeat: no-repeat;
+	background-position: -10% 75%;
 }
 
 h2 {
@@ -122,6 +125,12 @@ h2 {
 	display: grid;
 	height: 1fr;
 	grid-template-columns: 5fr 3fr;
+}
+
+.top>p {
+	color: lightgrey;
+	font-size: 72px;
+	margin: 0;
 }
 
 .minih {
@@ -137,10 +146,6 @@ h2 {
 	font-weight: bold;
 }
 
-hr {
-	border-top: 2px solid blue;
-}
-
 .top .logo {
 	grid-template-columns: 30px 204px auto;
 	margin: 24px 0 0 80px;
@@ -151,4 +156,42 @@ hr {
 	border-top: 3px solid black;
 	width: 100%;
 	height: 0;
+}
+
+.main1 {
+	display: grid;
+	grid-template-columns: 444px auto 287px;
+	grid-template-rows: 388px auto;
+	grid-template-areas: 
+	"img1 t1 t1"
+	"t2 t2 img2";
+	margin: 50px 0px 0px 100px;
+}
+
+.text1 {
+	justify-self: center;
+	grid-area: t1;
+	text-align: center;
+	width: 448px;
+	align-self: center;
+}
+.text2 {
+	grid-area: t2;
+	text-align: center;
+	width: 648px;
+	align-self: center;
+	justify-self: center;
+}
+#img1 {
+	grid-area: img1;
+}
+#img2 {
+	justify-self: end;
+	grid-area: img2;
+}
+.h {
+	font-size: 36px;
+}
+.t {
+	font-size: 24px;
 }
