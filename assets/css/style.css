@@ -338,3 +338,112 @@ a#bt {
 	align-self: center;
 	justify-self: center;
 }
+
+/*  ----testimony----  */
+
+#testimony .minih {
+	width: 242px;
+}
+
+#testimony .logo {
+	grid-template-columns: 30px 242px auto;
+}
+
+#testimony {
+	margin-top: 100px;
+	height: 500px;
+	grid-template-rows: 80px auto;
+}
+
+#testimony .reviews {
+	margin: 80px;
+	display: grid;
+	grid-template-columns: 3fr 3fr 5fr
+}
+
+.bgimg1, .bgimg2 {
+	border-radius: 30% 0;
+	width: 240px;
+	height: 320px;
+}
+
+.bgimg1 {
+	background-size: 110%;
+	background-image: url(../images/bg1.jpg);
+}
+
+.bgimg2 {
+	background-image: url(../images/bg2.jpg);
+}
+
+.comments {
+	display: grid;
+	grid-template-areas: 
+	"ppl ppl"
+	"left right"
+	". cemsel";
+}
+
+.ppl {
+	display: grid;
+	border: 1px solid blue;
+	border-radius: 0 25%;
+	width: 95%;
+	grid-area: ppl;
+}
+
+.ppl>img {
+	margin: 50px 0 20px 10px;
+}
+
+.ppl>p {
+	margin: 10px;
+	font-size: 14px;
+}
+
+.profile {
+	margin: 10px 0 50px 10px;
+	display: grid;
+	grid-template-areas: 
+	"img te1"
+	"img te2";
+	grid-template-columns: 40px auto;
+	grid-column-gap: 10px;
+}
+
+.profile img {
+	border-radius: 50%;
+	grid-area: img;
+	align-self: center;
+}
+
+.profile p {
+	font-size: 12px;
+	color: grey;
+	margin: 0;
+}
+
+.profile .prname {
+	grid-area: te1;
+}
+
+.profile .loc {
+	grid-area: te2;
+}
+
+.comments .l {
+	grid-area: left;
+	color: grey;
+}
+
+.comments .r {
+	grid-area: right;
+	text-align: right;
+	padding-right: 25px;
+}
+
+.comments .commentselect {
+	grid-area: cemsel;
+	justify-self: right;
+	padding-right: 25px;
+}
