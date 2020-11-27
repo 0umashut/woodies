@@ -64,13 +64,11 @@ div.nm {
 	margin: 24px 250px 0 80px;
 	grid-column-gap: 8px;
 	padding: 0;
+	height: 32px;
 }
 
-.logo>a {
+.logo>img {
 	height: 30px;
-}
-
-.logo>a>img {
 	width: 30px;
 }
 
@@ -446,4 +444,97 @@ a#bt {
 	grid-area: cemsel;
 	justify-self: right;
 	padding-right: 25px;
+}
+
+/*  --footer--  */
+
+footer {
+	background-image: url(../images/fbg.png);
+	display: grid;
+	height: 455px;
+	background-size: 100%;
+	background-position: 0 100%;
+}
+
+.subm {
+	width: 75%;
+	display: grid;
+	grid-template-areas: 
+	"he em"
+	"nte em";
+	margin: auto;
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: 
+}
+
+.he {
+	grid-area: he;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.nte {
+	font-size: 18px;
+	grid-area: nte;
+	margin: 0;
+}
+
+.email {
+	display: grid;
+	grid-area: em;
+	grid-template-columns: 2fr 1fr;
+	margin: 0;
+}
+
+.email input {
+	align-self: center;
+	border: 1px solid #DAA520;
+	padding: 10px;
+	border-radius: 3px 0 0 3px;
+}
+
+.email a {
+	align-self: center;
+	padding: 9.5px;
+	background-color: #DAA520;
+	border-radius: 0 3px 3px 0;
+	text-align: center;
+	color: white;
+}
+
+footer hr {
+	width: 58.5%;
+	margin: 80px auto 0 12.5%;
+	border-top: 1px solid lightgrey;
+}
+
+.footfooter {
+	margin: auto;
+	margin: 0 26% 0 12.5%;
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.footfooter .logo {
+	margin-left: 0;
+}
+
+.footfooter .het {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.footfooter .hnm {
+	font-size: 14px;
+	font-weight: 400;
+	color: grey;
+}
+
+footer .copy {
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	color: grey;
 }
